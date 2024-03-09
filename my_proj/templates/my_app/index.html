@@ -1,0 +1,33 @@
+<html>
+
+<body>
+
+    <!--Hello World-->
+    {{ hi }}
+    <br>
+
+    <br>
+    <!--First List-->
+    <h8><strong>UnTitle List</strong></h8>
+    <br>
+    <ul>
+        {% for name in list %}
+        <li>{{ name }} </li>
+        {% endfor %}
+    </ul>
+
+    <!--Second list-->
+    <h8><strong>UnTitle List</strong></h8>
+    <br>
+    <ul>
+        {% for name in titleList %}
+        <li>{{ name }}</li>
+        {% endfor %}
+    </ul>
+    <br>
+
+
+    {{ name }}
+</body>
+
+</html>

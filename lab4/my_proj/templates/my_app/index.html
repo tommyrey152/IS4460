@@ -1,7 +1,58 @@
 <html>
+
 <body>
+
+    <!--Hello World-->
     {{ hi }}
-<br>
+    <br>
+
+    <br>
+    <!--First List-->
+    <h8><strong>Untitled List</strong></h8>
+    <br>
+    <ul>
+        {% for name in list %}
+        <li>{{ name }} </li>
+        {% endfor %}
+    </ul>
+
+    <!--Second list-->
+    <h8><strong>Titled List</strong></h8>
+    <br>
+    <ul>
+        {% for name in titleList %}
+        <li>{{ name }}</li>
+        {% endfor %}
+    </ul>
+    <br>
+
+
     {{ name }}
+    <br>
+    <br>
+
+    <!--Car Stuff-->
+    <br>
+    <h2><strong>Automotive Details</strong></h2>
+
+    <h4>Car 1</h4>
+
+    <p> Car 1 color: {{ car1.color }} makes sound: "{{ car1.honk }}"" and has wheels {{ car1.wheels}}</p>
+    <p> Car 1 is a: {{ car1.make }} and is the {{ car1.model }} model and was made in the year {{ car1.year }}</p>
+    <br>
+
+    <h4>Car 2</h4>
+
+    <p> Car 2 color: {{ car2.color }}, makes sound: "{{ car2.honk }}", and has {{ car2.wheels}} wheels.</p>
+    <p> Car 2 is a: {{ car2.make }} and is the {{ car2.model }} model and was made in the year {{ car2.year }}.</p>
+    <br>
+
+    <h4>Motorcycle 1</h4>
+
+    <p> Motorcyle 1 is color: {{ moto1.color }}, it makes the sound " {{ moto1.honk }}", and has {{ moto1.wheels }} wheels.</p>
+    <p> Motorecyle 1 is a: {{ moto1.make }} and is the {{ moto1.model }} model and was made in the year {{ moto1.year }}.</p>
+
+
 </body>
+
 </html>
