@@ -11,6 +11,8 @@ class User(models.Model):
     fav_genre = models.CharField(max_length = 100)
     fav_movie = models.CharField(max_length = 100)
 
+    def __str__(self):
+        return self.userName
 
 
 

@@ -49,6 +49,28 @@ for customer_info in customers:
 
 
 # Django QuerySet
+allMovies = Movie.objects.all()
+
+filtered = Movie.objects.get(movie_name__startwiths="D")
+
+retrieve_one = Movie.objects.get(movie_name="Se7en")
+
+updateMovie = Movie.objects.get(movie_name="Star Wars: Empire Strikes Back")
+updateMovie.director = "George Lucas"
+updateMovie.save()
+
+deletedMov = Movie.objects.get(pk=1)
+deletedMov.delete()
+
+
+
+#get Username data
+user_data = User.objects.get(userName = "tommyrey152")
+
+#included sql join code here as well in comment
+
+#SELECT * FROM user_user 
+#WHERE username = 'tommyrey152';
 
 
 
